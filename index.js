@@ -46,11 +46,15 @@ console.groupEnd(label);
 // 嵌套组
 const timeline1 = 'New York 2012';
 const timeline2 = 'Camp Lehigh 1970';
+const timeline3 = 'collapsed group';
 console.group(timeline1);
 console.info('Mind');
 console.info('Time');
 console.group(timeline2);
-console.groupCollapsed(timeline2);
+console.groupCollapsed(timeline3);
+console.info(1);
+console.info(2);
+console.groupEnd(timeline3);
 console.info('Space');
 console.info('Extra Pym Particles');
 console.groupEnd(timeline2);
